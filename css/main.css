@@ -1,6 +1,13 @@
-body {
-  background: red;
+@font-face {
+  font-family: 'Shrikhand';
+  src: url(/fonts/Shrikhand-Regular.ttf);
+  font-weight: 125 950;
+  font-stretch: 75% 125%;
 }
 
+header {
+  font-family: Shrikhand;
+  color: blue;
+}
 
 /*# sourceMappingURL=main.css.map */

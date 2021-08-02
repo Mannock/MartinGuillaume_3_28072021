@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'Shrikhand';
+    src: url(/fonts/Shrikhand-Regular.ttf);
+    font-weight: 125 950;
+    font-stretch: 75% 125%;
+}
+
+@font-face {
+    font-family: 'Shrikhand';
+    src: url(/fonts/Roboto-Regular.ttf);
+    font-weight: 125 950;
+    font-stretch: 75% 125%;
+}
+
+header {
+    font-family: Shrikhand;
+    color: blue;
+}
+
+body {
+    font-family: Roboto;
+    color: pink;
+}
