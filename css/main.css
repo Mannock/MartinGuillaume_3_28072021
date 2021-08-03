@@ -5,9 +5,100 @@
   font-stretch: 75% 125%;
 }
 
-header {
-  font-family: Shrikhand;
-  color: blue;
+@font-face {
+  font-family: 'Roboto';
+  src: url(/fonts/Roboto-Regular.ttf);
+  font-stretch: 75% 125%;
 }
 
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  font-family: Roboto;
+  color: palevioletred;
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: Shrikhand, 'Sans-serif';
+  color: black;
+}
+
+.intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.instructions {
+  color: black;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.instructions__step {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  background-color: #f6f6f6;
+  -webkit-box-shadow: 2px 2px 8px 1px #dddddd;
+          box-shadow: 2px 2px 8px 1px #dddddd;
+  margin: 15px;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.instructions__step p {
+  font-weight: 600;
+  padding-bottom: 0px;
+  color: black;
+}
+
+.instructions__step .fas {
+  margin-right: 1em;
+  color: #7e7e7e;
+  font-size: 1.3em;
+}
+
+.number {
+  margin-right: 20px;
+  margin-left: -30px;
+  background-color: #9356DC;
+  padding: 3px 8px;
+  border-radius: 50%;
+  color: white;
+}
 /*# sourceMappingURL=main.css.map */

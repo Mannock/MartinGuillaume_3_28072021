@@ -6,18 +6,27 @@
 }
 
 @font-face {
-    font-family: 'Shrikhand';
+    font-family: 'Roboto';
     src: url(/fonts/Roboto-Regular.ttf);
-    font-weight: 125 950;
     font-stretch: 75% 125%;
 }
 
-header {
-    font-family: Shrikhand;
-    color: blue;
-}
+
+html {
+    box-sizing: border-box;
+  }
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
 
 body {
     font-family: Roboto;
-    color: pink;
+    color: palevioletred;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    font-family: Shrikhand, 'Sans-serif';
+    color: black;
 }
