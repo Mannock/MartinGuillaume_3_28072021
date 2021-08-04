@@ -22,8 +22,12 @@
         background-color: #f6f6f6;
         box-shadow: 2px 2px 8px 1px #dddddd;
         margin: 15px;
-        padding: 20px;
-        border-radius: 15px;
+        padding: 15px;
+        border-radius: 25px;
+        &:hover {
+            background-color: #f5edff;
+            box-shadow: 2px 4px 8px 0px #d1d1d1;
+        }
     & p {
         font-weight: 600;
         padding-bottom: 0px;
@@ -33,6 +37,9 @@
         margin-right: 1em;
         color: #7e7e7e;
         font-size: 1.3em;
+        &:hover {
+            color: $primary-clr; 
+        }
     }
     }
 }
@@ -44,4 +51,58 @@
     padding: 3px 8px;
     border-radius: 50%;
     color:white;
+}
+
+.restaurant {
+    padding-top: 10px;
+    padding-bottom: 30px;
+    background-color: #f4f4f4;
+    &__display{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    &__pic {
+        background-color: white;
+        border-radius: 15px;
+        margin: 10px;
+        padding-bottom: 10px;
+        height: 250px;
+        box-shadow: 0px 4px 5px 0px #cbcbcb;
+        &--mod {
+            height: 190px;
+            width: 100%;
+            border-radius: 15px 15px 0px 0px;
+            object-fit: cover;
+            position: relative;
+        }
+    }
+}
+
+.card {
+    position: relative;
+}
+
+.infos {
+    padding-top: 5px;
+    padding-left: 10px;
+
+    & p{
+        color: black;
+    }
+    &__name {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.heart{
+    position:relative;
+}
+
+.far{
+    height: 60px;
+    width: 60px;
+    font-size: 30px; 
 }

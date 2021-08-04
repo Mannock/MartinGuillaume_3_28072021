@@ -37,6 +37,23 @@ body {
   color: black;
 }
 
+h2 {
+  font-weight: 900;
+}
+
+h4 {
+  font-size: 17px;
+}
+
+h4, p {
+  margin: 0 0 5px 0;
+}
+
+p {
+  font-size: 14px;
+  padding-bottom: 30px;
+}
+
 .intro {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -77,8 +94,14 @@ body {
   -webkit-box-shadow: 2px 2px 8px 1px #dddddd;
           box-shadow: 2px 2px 8px 1px #dddddd;
   margin: 15px;
-  padding: 20px;
-  border-radius: 15px;
+  padding: 15px;
+  border-radius: 25px;
+}
+
+.instructions__step:hover {
+  background-color: #f5edff;
+  -webkit-box-shadow: 2px 4px 8px 0px #d1d1d1;
+          box-shadow: 2px 4px 8px 0px #d1d1d1;
 }
 
 .instructions__step p {
@@ -93,6 +116,10 @@ body {
   font-size: 1.3em;
 }
 
+.instructions__step .fas:hover {
+  color: #9356DC;
+}
+
 .number {
   margin-right: 20px;
   margin-left: -30px;
@@ -100,5 +127,77 @@ body {
   padding: 3px 8px;
   border-radius: 50%;
   color: white;
+}
+
+.restaurant {
+  padding-top: 10px;
+  padding-bottom: 30px;
+  background-color: #f4f4f4;
+}
+
+.restaurant__display {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.restaurant__pic {
+  background-color: white;
+  border-radius: 15px;
+  margin: 10px;
+  padding-bottom: 10px;
+  height: 250px;
+  -webkit-box-shadow: 0px 4px 5px 0px #cbcbcb;
+          box-shadow: 0px 4px 5px 0px #cbcbcb;
+}
+
+.restaurant__pic--mod {
+  height: 190px;
+  width: 100%;
+  border-radius: 15px 15px 0px 0px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+}
+
+.card {
+  position: relative;
+}
+
+.infos {
+  padding-top: 5px;
+  padding-left: 10px;
+}
+
+.infos p {
+  color: black;
+}
+
+.infos__name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.heart {
+  position: relative;
+}
+
+.far {
+  height: 60px;
+  width: 60px;
+  font-size: 30px;
 }
 /*# sourceMappingURL=main.css.map */
