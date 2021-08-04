@@ -1,0 +1,30 @@
+footer {
+    color: white;
+    background-color: #353535;
+    padding: 1em;
+    & h2 {
+        font-family: Shrikhand;
+        font-weight: 200;
+        padding: 0px;
+    }
+    & ul {
+        list-style: none;
+        margin-left: 0.4em;
+        padding-left: 0;
+    }
+    & li {
+        margin-bottom: 10px;
+        & i {
+            margin: 0;
+        }
+    & a{
+        color: white;
+        font-style: normal;
+        font-size: 1em;
+    }
+    & .fas {
+        margin-right: 1em;
+        color: white;
+        }
+    }
+}

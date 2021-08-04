@@ -66,6 +66,43 @@ a {
   list-style: none;
 }
 
+footer {
+  color: white;
+  background-color: #353535;
+  padding: 1em;
+}
+
+footer h2 {
+  font-family: Shrikhand;
+  font-weight: 200;
+  padding: 0px;
+}
+
+footer ul {
+  list-style: none;
+  margin-left: 0.4em;
+  padding-left: 0;
+}
+
+footer li {
+  margin-bottom: 10px;
+}
+
+footer li i {
+  margin: 0;
+}
+
+footer li a {
+  color: white;
+  font-style: normal;
+  font-size: 1em;
+}
+
+footer li .fas {
+  margin-right: 1em;
+  color: white;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -290,42 +327,5 @@ button {
   height: 60px;
   width: 60px;
   font-size: 30px;
-}
-
-footer {
-  color: white;
-  background-color: #353535;
-  padding: 1em;
-}
-
-footer h2 {
-  font-family: Shrikhand;
-  font-weight: 200;
-  padding: 0px;
-}
-
-footer ul {
-  list-style: none;
-  margin-left: 0.4em;
-  padding-left: 0;
-}
-
-footer li {
-  margin-bottom: 10px;
-}
-
-footer li i {
-  margin: 0;
-}
-
-footer li a {
-  color: white;
-  font-style: normal;
-  font-size: 1em;
-}
-
-footer li .fas {
-  margin-right: 1em;
-  color: white;
 }
 /*# sourceMappingURL=main.css.map */
