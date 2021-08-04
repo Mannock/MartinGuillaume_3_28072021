@@ -37,6 +37,10 @@ body {
   color: black;
 }
 
+h1 {
+  margin: 0.3em;
+}
+
 h2 {
   font-weight: 900;
   padding-left: 0.8em;
@@ -62,7 +66,7 @@ a {
   list-style: none;
 }
 
-.intro {
+header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -70,9 +74,86 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+}
+
+.search-field {
+  position: relative;
+  background-color: #eaeaea;
+}
+
+.iconmap {
+  position: absolute;
+  top: 16px;
+  left: 25%;
+  font-size: 15px;
+  width: 40px;
+}
+
+.iconmap i {
+  font-size: 16px;
+  color: black;
+}
+
+input {
+  background-color: #eaeaea;
+  border: 0;
+  text-align: center;
+  height: 50px;
+  width: 100%;
+  -webkit-box-shadow: inset 0px 2px 3px 0px #d1d1d1;
+          box-shadow: inset 0px 2px 3px 0px #d1d1d1;
+  padding: 0;
+}
+
+input::-webkit-input-placeholder {
+  color: black;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+input:-ms-input-placeholder {
+  color: black;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+input::-ms-input-placeholder {
+  color: black;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+input::placeholder {
+  color: black;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.ad {
+  text-align: center;
+  background-color: #f6f6f6;
+  padding-bottom: 3em;
+}
+
+.ad h2 {
+  font-weight: 800;
+}
+
+.ad p {
+  color: #4d4d4d;
+}
+
+button {
+  font-size: 14px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(#FF79DA, #9356DC);
+  padding: 15px;
+  color: white;
+  border: 0px;
+  border-radius: 25px;
+  -webkit-box-shadow: 0px 3px 4px 2px #d1d1d1;
+          box-shadow: 0px 3px 4px 2px #d1d1d1;
+  cursor: pointer;
 }
 
 .instructions {

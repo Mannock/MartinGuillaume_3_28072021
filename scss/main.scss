@@ -1,12 +1,59 @@
 @import "./utils/variables";
 @import "./base/typography";
+@import "./components/mixins";
 
 
-
-.intro {
+header {
     display: flex;
     flex-direction: column;
-    align-items: center;
+}
+
+.search-field{
+    position: relative;
+    background-color: #eaeaea;
+}
+
+.iconmap {
+    position: absolute;
+    top: 16px;
+    left: 25%;
+    font-size: 15px;
+    width: 40px;
+    & i {
+        font-size: 16px;
+        color: black;
+    }
+}
+
+input{
+    background-color: #eaeaea;
+    border: 0;
+    text-align: center;
+    height: 50px;
+    width: 100%;
+    box-shadow: inset 0px 2px 3px 0px #d1d1d1;
+    padding: 0;
+    &::placeholder{
+        color:black;
+        font-size: 16px;
+        font-weight: 600;
+    }  
+}
+
+.ad {
+    text-align: center;
+    background-color: #f6f6f6;
+    padding-bottom: 3em;
+    & h2 {
+        font-weight: 800;
+    }
+    & p {
+        color: #4d4d4d;
+    }
+}
+
+button {
+    @include button;
 }
 
 .instructions {
