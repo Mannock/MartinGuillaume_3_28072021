@@ -112,10 +112,6 @@ h2 span {
 
 }
 
-.choice:hover >.name {
-    min-width: calc(100% - 120px); /*total = calc(100% - (prix + box))*/
-}
-
 .choice p, .choice h3{
     overflow: hidden;  /*texte en ... */
     text-overflow: ellipsis;

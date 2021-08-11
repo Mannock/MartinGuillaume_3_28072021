@@ -9,6 +9,21 @@
     cursor: pointer;
   }
 
+  @mixin hoverbutton{
+    background: linear-gradient(rgba(255, 121, 218, 0.8),rgba(147, 86, 220, 0.8)); /*éclaircissement couleur*/
+    box-shadow: 0px 3px 4px 2px darken(#eaeaea, 30%); /* durcissement ombre*/
+  }
+
+  @mixin card-span{
+    position: absolute;
+    z-index: 1;
+    right: 10px;
+    top: 15px;
+    background-color: $tertiary-clr;
+    color: #2c9c81;
+    padding: 5px 10px;
+  }
+
   @mixin return{
     position: absolute;
     left:20px;

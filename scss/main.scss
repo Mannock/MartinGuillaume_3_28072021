@@ -4,6 +4,7 @@
 @import "./layout/footer";
 @import "./pages/instructions";
 @import "./pages/menu";
+@import "./components/keyframes";
 
 
 header {
@@ -35,7 +36,7 @@ header {
         left:46%;
     }
     & i {
-        font-size: 16px;
+        font-size: 1em;
         color: black;
     }
 }
@@ -73,6 +74,10 @@ input{
 
 button {
     @include button;
+}
+
+button:hover{
+    @include hoverbutton;
 }
 
 
@@ -118,6 +123,9 @@ button {
 
 .card {
     position: relative;
+    & span{
+        @include card-span;
+    }
 }
 
 .infos {
@@ -142,5 +150,29 @@ button {
     height: 60px;
     width: 60px;
     font-size: 30px; 
+}
+
+.heart--empty{
+    position: absolute;
+    -webkit-text-stroke: 1px white;
+}
+
+/*coeur couleur*/
+.heart--full{
+    opacity: 0;
+}
+
+.heart--full:hover{
+    opacity: 1;
+    background: linear-gradient(70deg,$secondary-clr,$primary-clr);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    cursor: pointer;
+    animation: color;
+    animation-duration: 1s;
+    animation-delay: 0.3s;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
 }
 

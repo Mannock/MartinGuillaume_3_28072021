@@ -1,0 +1,21 @@
+@keyframes delayapparition{
+    0%{
+        opacity: 0;
+        
+    }
+
+    100%{
+        opacity: 1;
+        
+    }
+}
+
+@keyframes box-appearance{
+    0%{
+        transform: translateX(60px);
+    }
+
+    100%{
+        transform: translateX(0px);
+    }
+}
