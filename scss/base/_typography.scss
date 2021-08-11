@@ -27,8 +27,10 @@ body {
 }
 
 .logo {
-    display: flex;
-    justify-content: center;
+    padding: 20px 0 10px 0;
+    width: 100%;
+    font-size: 35px;
+    text-align: center;
     font-family: Shrikhand, 'Sans-serif';
     color: black;
 }
@@ -47,16 +49,20 @@ h2 {
     }
 }
 
+h3 {
+    font-size: 1em;;
+}
+
 h4 {
     font-size: 17px;
 }
   
-h4, p {
+h3, h4, p {
     margin: 0 0 5px 0;
 }
 
 p{
-    font-size:1em;
+    font-size:0.9em;
     padding-bottom: 30px;
 }
 

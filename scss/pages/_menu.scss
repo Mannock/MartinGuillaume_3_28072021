@@ -1,0 +1,187 @@
+
+.container, .menus{
+    max-width: 950px;
+    margin: auto;
+}
+
+header{
+    position:relative;
+}
+.return{
+   @include return;
+}
+
+header img{
+    height: 235px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.menus{
+    width: 100%;
+    background-color: #f6f6f6;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    margin-top: -50px;
+    border-radius: 35px 35px 0 0;
+    position:relative;
+}
+
+.infos__name h1{
+    font-family: "Shrikhand";
+    font-weight: 400;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 0px;
+}
+
+h2 span {
+    border-bottom:3px solid $tertiary-clr;
+    display: block;
+    width: 50px;
+    margin-bottom: 15px;
+}
+
+.icon{
+    position: relative;
+    padding-top:20px;
+}
+
+.menu__details{
+    margin: auto;
+    max-width: 900px;
+}
+
+.choice__delay{
+    animation: delayapparition;
+    animation-duration: 0.6s;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+}
+
+.delay__0{
+    animation-delay:0s;
+}
+
+.delay__1{
+    animation-delay:0.5s;
+}
+
+.delay__2{
+    animation-delay:1s;
+}
+
+.delay__3{
+    animation-delay:1.5s;
+}
+
+.delay__4{
+    animation-delay:2s;
+}
+
+
+.entrees, .plats, .desserts {
+    padding-bottom: 15px;
+    @include tablet{
+        margin-left: 15px;
+    }
+    &__titre{
+        color: #7e7e7e;
+        font-size: 16px;
+    }
+    & a{
+        background-color: white;
+        margin-bottom: 15px;
+        height: 80px;
+    }
+    & p{
+        color:black;
+        padding-bottom:0;
+    }
+}
+
+.choice{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    border-radius: 10px;
+    margin: auto;
+    box-shadow: 0px 4px 5px 0px #cbcbcb;
+    cursor: pointer;
+    overflow: hidden; /*cache le check qui dépasse*/
+
+}
+
+.choice:hover >.name {
+    min-width: calc(100% - 120px); /*total = calc(100% - (prix + box))*/
+}
+
+.choice p, .choice h3{
+    overflow: hidden;  /*texte en ... */
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.name{
+    padding: 10px;
+    flex-grow: 1;
+    overflow: hidden;  /*texte en ... */
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.price{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    padding: 10px;
+    & span{
+        font-size:14px;
+    }
+}
+
+
+.gradient{
+    display: flex;
+    margin: auto;
+    @include laptop {
+        font-size: 17px;
+    }
+}
+
+/*coche verte*/
+.box{
+    display: flex;
+    background-color: $tertiary-clr;
+    width:0;
+    transition: all 1s;
+    & .check{
+        margin: auto;
+        transition: transform 1s;
+        transform: rotate(0deg);
+        & .fa-check-circle{
+            color: white;
+            font-size: 25px;
+        }
+    } 
+}
+
+.choice:hover{
+    & .box{
+        min-width:60px;  /*définit la taille de l'apparition box*/
+        animation:box-appearance; /*animation: box-appearance;*/
+        animation-duration: 500ms;
+        animation-timing-function: ease-out;
+        animation-fill-mode: forwards;
+    }
+    & .price{
+        animation:box-appearance; /* animation: box-appearance;*/
+        animation-duration: 500ms;
+        animation-timing-function: ease-out;
+        animation-fill-mode: forwards;
+    }
+    & .check{
+        transform: rotate(360deg);
+    }
+}
