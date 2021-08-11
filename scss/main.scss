@@ -2,6 +2,7 @@
 @import "./base/typography";
 @import "./utils/mixins";
 @import "./layout/footer";
+@import "./pages/instructions";
 
 
 header {
@@ -20,6 +21,18 @@ header {
     left: 25%;
     font-size: 15px;
     width: 40px;
+    @include tablet{
+        left: 40%;
+    }
+    @include laptop{
+        left: 42%;
+    }
+    @include laptop-l{
+        left:44%;
+    }
+    @include laptop-xl{
+        left:46%;
+    }
     & i {
         font-size: 16px;
         color: black;
@@ -34,6 +47,9 @@ input{
     width: 100%;
     box-shadow: inset 0px 2px 3px 0px #d1d1d1;
     padding: 0;
+    font-family: Roboto;
+    font-size: 1em;
+    font-weight: 600;
     &::placeholder{
         color:black;
         font-size: 16px;
@@ -50,6 +66,7 @@ input{
     }
     & p {
         color: #4d4d4d;
+        padding: 0em 1em 1.5em;
     }
 }
 
@@ -57,60 +74,19 @@ button {
     @include button;
 }
 
-.instructions {
-    color: black;
-    background-color: #fff;
-    display: flex;
-    flex-direction: column;
-    padding: 5px;
-    margin-bottom: 2.5em;
 
-    &__step {
-        display: flex;
-        flex-direction: row;
-        align-items: baseline;
-        background-color: #f6f6f6;
-        box-shadow: 2px 2px 8px 1px #dddddd;
-        margin: 1em;
-        padding: 1em;
-        border-radius: 25px;
-        &:hover {
-            background-color: #f5edff;
-            box-shadow: 2px 4px 8px 0px #d1d1d1;
-        }
-    & p {
-        font-weight: 600;
-        padding-bottom: 0px;
-        color: black;
-    }    
-    & .fas {
-        margin-right: 1em;
-        color: #7e7e7e;
-        font-size: 1.3em;
-        &:hover {
-            color: $primary-clr; 
-        }
-    }
-    }
-}
-
-.number{
-    margin-right: 20px;
-    margin-left: -30px;
-    background-color: $primary-clr;
-    padding: 3px 8px;
-    border-radius: 50%;
-    color:white;
-}
 
 .restaurant {
     padding-top: 10px;
-    padding-bottom: 30px;
+    padding-bottom: 3em;
     background-color: #f6f6f6;
     &__display{
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
+        @include laptop{
+            flex-direction: row;
+        }
     }
     &__pic {
         background-color: white;
@@ -125,6 +101,16 @@ button {
             border-radius: 15px 15px 0px 0px;
             object-fit: cover;
             position: relative;
+        }
+        @include tablet{
+            margin: 10px auto 30px auto;
+            width: 80%;
+        }
+        @include laptop{
+            width: 35%;
+        }
+        @include laptop-xl{
+            width: 37%;
         }
     }
 }

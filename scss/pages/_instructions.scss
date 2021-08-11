@@ -1,0 +1,65 @@
+.instructions {
+    color: black;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    margin-bottom: 2.5em;
+    @include tablet {
+        margin: 10px auto 30px auto;
+        width: 80%;
+        align-items: center;
+    }
+    @include laptop{
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-bottom: 30px;
+    }  
+
+    &__step {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        background-color: #f6f6f6;
+        box-shadow: 2px 2px 8px 1px #dddddd;
+        margin: 1em;
+        padding: 1em;
+        border-radius: 25px;
+        &:hover {
+            background-color: #f5edff;
+            box-shadow: 2px 4px 8px 0px #d1d1d1;
+        }
+    & p {
+        font-weight: 600;
+        padding-bottom: 0px;
+        color: black;
+    }    
+    & .fas {
+        margin-right: 1em;
+        color: #7e7e7e;
+        font-size: 1.3em;
+        &:hover {
+            color: $primary-clr;
+        }
+    }
+    @include tablet{
+        width:40%;
+    }
+    @include laptop {
+        width:30%;
+    }
+    @include laptop-l{
+        width:20%;
+    }
+
+    }
+}
+
+.number{
+    margin-right: 20px;
+    margin-left: -30px;
+    background-color: $primary-clr;
+    padding: 3px 8px;
+    border-radius: 50%;
+    color:white;
+}

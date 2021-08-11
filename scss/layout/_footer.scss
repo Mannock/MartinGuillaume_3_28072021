@@ -6,6 +6,9 @@ footer {
         font-family: Shrikhand;
         font-weight: 200;
         padding: 0px;
+        @include tablet {
+            text-align: center;
+        }
     }
     & ul {
         list-style: none;
@@ -16,6 +19,9 @@ footer {
         margin-bottom: 10px;
         & i {
             margin: 0;
+        }
+        @include tablet {
+            text-align: center;
         }
     & a{
         color: white;

@@ -1,3 +1,10 @@
 $primary-clr: #9356DC;
 $secondary-clr: #FF79DA; 
 $tertiary-clr: #99E2D0;
+
+$breakpoints: (
+    tablet-min: 768px,
+    laptop-min: 1024px,
+    laptop-l-min: 1444px,
+    laptop-xl-min: 2050px,
+);
