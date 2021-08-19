@@ -143,7 +143,7 @@ footer li .fas {
 @media screen and (min-width: 768px) {
   .instructions {
     margin: 10px auto 30px auto;
-    width: 80%;
+    width: 100%;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -878,14 +878,14 @@ button:hover {
   background: #f6f6f6;
   gap: 50px;
   padding: 50px;
-  margin: calc(50px - 16px) -20px 0px -20px;
+  margin: 34px -20px 0px -20px;
 }
 
 @media screen and (max-width: 1024px) {
   .restaurant {
     gap: 20px;
     padding: 20px;
-    margin: calc(50px - 16px) 0px 0px 0px;
+    margin: 34px 0px 0px 0px;
   }
 }
 
@@ -901,6 +901,7 @@ button:hover {
           flex: 1 1 100%;
   text-align: center;
   font-size: 2rem;
+  padding-left: 0em;
 }
 
 @media screen and (max-width: 650px) {
