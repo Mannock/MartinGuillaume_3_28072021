@@ -33,9 +33,9 @@
 
 @for $i from 1 through 5 {
   .circle-#{$i} {
-    background-color: nth($color, $i);
+    background-color: nth($colors-circles, $i);
     &:before {
-      background-color: nth($color, $i);
+      background-color: nth($colors-circles, $i);
       animation-delay: 200ms * $i;
     }
   }

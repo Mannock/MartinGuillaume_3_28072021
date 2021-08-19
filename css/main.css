@@ -681,51 +681,51 @@ h2 span {
 }
 
 .circle-1 {
-  background-color: #49b8e5;
+  background-color: #9356DC;
 }
 
 .circle-1:before {
-  background-color: #49b8e5;
+  background-color: #9356DC;
   -webkit-animation-delay: 200ms;
           animation-delay: 200ms;
 }
 
 .circle-2 {
-  background-color: #1e98d4;
+  background-color: #b35cdc;
 }
 
 .circle-2:before {
-  background-color: #1e98d4;
+  background-color: #b35cdc;
   -webkit-animation-delay: 400ms;
           animation-delay: 400ms;
 }
 
 .circle-3 {
-  background-color: #2a92d0;
+  background-color: #cf64dc;
 }
 
 .circle-3:before {
-  background-color: #2a92d0;
+  background-color: #cf64dc;
   -webkit-animation-delay: 600ms;
           animation-delay: 600ms;
 }
 
 .circle-4 {
-  background-color: #3a88c8;
+  background-color: #e86edb;
 }
 
 .circle-4:before {
-  background-color: #3a88c8;
+  background-color: #e86edb;
   -webkit-animation-delay: 800ms;
           animation-delay: 800ms;
 }
 
 .circle-5 {
-  background-color: #507cbe;
+  background-color: #FF79DA;
 }
 
 .circle-5:before {
-  background-color: #507cbe;
+  background-color: #FF79DA;
   -webkit-animation-delay: 1000ms;
           animation-delay: 1000ms;
 }
