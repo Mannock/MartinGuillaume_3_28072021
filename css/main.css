@@ -111,18 +111,6 @@ header {
   }
 }
 
-@media screen and (min-width: 1444px) {
-  .iconmap {
-    left: 44%;
-  }
-}
-
-@media screen and (min-width: 2050px) {
-  .iconmap {
-    left: 46%;
-  }
-}
-
 .iconmap i {
   font-size: 1em;
   color: black;

@@ -21,12 +21,7 @@ header {
     @include laptop{
         left: 42%;
     }
-    @include laptop-l{
-        left:44%;
-    }
-    @include laptop-xl{
-        left:46%;
-    }
+    
     & i {
         font-size: 1em;
         color: black;
