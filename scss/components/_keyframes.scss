@@ -19,3 +19,32 @@
         transform: translateX(0px);
     }
 }
+
+@keyframes loader {
+    
+    70%{
+        opacity: 1;
+    }
+
+    99.99%{ 
+        z-index: 9999; 
+        opacity: 0; 
+    }
+
+    100%{ 
+        opacity: 0; 
+        z-index: -9999; 
+    }
+}
+
+@keyframes scale {
+    0% {
+      transform: scale(1);
+    }
+    50%, 75% {
+      transform: scale(2.5);
+    }
+    78%, 100% {
+      opacity: 0;
+    }
+  }
