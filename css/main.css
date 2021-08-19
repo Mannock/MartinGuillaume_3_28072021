@@ -121,7 +121,8 @@ footer li a {
 }
 
 footer li .fas {
-  margin-right: 1em;
+  width: 0.8em;
+  margin-right: 0.8em;
   color: white;
 }
 
