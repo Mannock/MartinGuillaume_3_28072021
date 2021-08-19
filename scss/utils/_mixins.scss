@@ -33,6 +33,10 @@
     cursor: pointer;
   }
 
+  @mixin bg-gradient-second-prim{
+    background: linear-gradient($secondary-clr, $primary-clr);
+}
+
   
 @mixin tablet {
   @media screen and (min-width: map-get($breakpoints, tablet-min)){

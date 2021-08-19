@@ -5,7 +5,7 @@
 @import "./pages/instructions";
 @import "./pages/menu";
 @import "./components/keyframes";
-
+@import "./components/heart";
 
 header {
     display: flex;
@@ -80,7 +80,97 @@ button:hover{
     @include hoverbutton;
 }
 
+.restaurant{
+    flex: 1 1 100%;
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: stretch;
+    align-items: stretch;
+    background: #f6f6f6;
+    gap: 50px;
+    padding: 50px; 
+    margin: calc(50px - 16px) -20px 0px -20px;
+    @media screen and (max-width: 1024px){
+        gap: 20px;
+        padding: 20px;
+        margin: calc(50px - 16px) 0px 0px 0px;
+    }
+    @media screen and (max-width: 650px){
+        padding: 20px;
+    }
 
+    .restaurant__title {
+        flex: 1 1 100%;
+        text-align: center;
+        font-size: 2rem;
+        @media screen and (max-width: 650px){
+            text-align: left;
+            font-size: 1.5rem;
+        }
+    }
+
+    .restaurant__card{
+        min-width: 40%;
+        flex: 1 1 410px;
+        border-radius: 20px;
+        overflow: hidden;
+        background: white;
+        box-shadow: 0px 0px 8px #a5a5a5;
+        position: relative;
+        z-index: 1;
+        transition: box-shadow 200ms ease-out;
+        
+        &:hover{
+            box-shadow: 0px 0px 20px #a5a5a5;
+        }
+
+        &:hover .restaurant__pic--mod{
+            filter: brightness(1.1);
+        }  
+    }
+
+    .restaurant__pic{
+        color: black;
+        border-radius: 20px;
+    }
+
+    .restaurant__new{
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        background-color: $tertiary-clr;
+        padding: 8px;
+        border-radius: 3px;
+        color: #009f88;
+    }
+
+    .restaurant__pic--mod{
+        width: 100%;
+        max-height: 200px;
+        object-fit: cover;
+        transition: filter 200ms linear;
+    }
+
+    .restaurant__infos{
+        padding: 15px;
+        position: relative;
+        
+        .heart-icons__container{
+            right: 20px;
+        }
+
+        &--title{
+            margin: 0px 0px 6px 0px;
+            font-weight: 900;
+            font-size: 1.1rem;
+        }
+    }
+
+     
+}
+
+
+/*
 
 .restaurant {
     padding-top: 10px;
@@ -129,8 +219,8 @@ button:hover{
 }
 
 .infos {
-    padding-top: 5px;
-    padding-left: 10px;
+    padding: 10px;
+    position: relative;
 
     & p{
         color: black;
@@ -142,37 +232,6 @@ button:hover{
     }
 }
 
-.heart{
-    position:relative;
-}
 
-.far{
-    height: 60px;
-    width: 60px;
-    font-size: 30px; 
-}
 
-.heart--empty{
-    position: absolute;
-    -webkit-text-stroke: 1px white;
-}
-
-/*coeur couleur*/
-.heart--full{
-    opacity: 0;
-}
-
-.heart--full:hover{
-    opacity: 1;
-    background: linear-gradient(70deg,$secondary-clr,$primary-clr);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: bold;
-    cursor: pointer;
-    animation: color;
-    animation-duration: 1s;
-    animation-delay: 0.3s;
-    animation-timing-function: linear;
-    animation-fill-mode: both;
-}
-
+*/

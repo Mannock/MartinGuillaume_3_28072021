@@ -29,6 +29,9 @@
             background-color: #f5edff;
             box-shadow: 2px 4px 8px 0px #d1d1d1;
         }
+        &:hover .fas {
+            color: $primary-clr;
+        }
     & p {
         font-weight: 600;
         padding-bottom: 0px;
@@ -38,9 +41,6 @@
         margin-right: 1em;
         color: #7e7e7e;
         font-size: 1.3em;
-        &:hover {
-            color: $primary-clr;
-        }
     }
     @include tablet{
         width:40%;

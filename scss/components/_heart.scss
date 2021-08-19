@@ -1,0 +1,52 @@
+.heart__container{ 
+    right: 20px;
+    position: absolute;
+    top: 50%;
+    height: 24px;
+    width: 30px;
+    transform: translateY(-50%);
+
+    &:hover .heart--full{
+        transform: scale(1);
+    }
+
+    &:hover .heart--empty{
+        @include bg-gradient-second-prim;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .heart__icon{
+        color: transparent;
+        position: absolute;
+        inset: 0px;
+        font-size: 1.5rem;
+        text-align: center;
+
+      &:hover{
+          cursor: pointer;
+      }
+    }
+
+    .heart--empty{
+        transition: all 200ms linear;
+        z-index: 10;
+        background: black;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .heart--full{
+        transition: 300ms ease-in-out;
+        font-size: 1.5rem;
+        @include bg-gradient-second-prim;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transform-origin: bottom;
+        transform: scale(0);
+        z-index: 1;
+    }
+}
