@@ -5,6 +5,8 @@
     height: 24px;
     width: 30px;
     transform: translateY(-50%);
+    background-clip: text;
+    -webkit-background-clip: text;
 
     &:hover .heart--full{
         transform: scale(1);
@@ -12,8 +14,8 @@
 
     &:hover .heart--empty{
         @include bg-gradient-second-prim;
-        -webkit-background-clip: text;
-        background-clip: text;
+        background-clip:inherit ;
+        -webkit-background-clip: inherit;
         -webkit-text-fill-color: transparent;
     }
 
@@ -33,8 +35,8 @@
         transition: all 200ms linear;
         z-index: 10;
         background: black;
-        -webkit-background-clip: text;
-        background-clip: text;
+        background-clip: inherit;
+        -webkit-background-clip: inherit;
         -webkit-text-fill-color: transparent;
     }
 
@@ -42,8 +44,7 @@
         transition: 300ms ease-in-out;
         font-size: 1.5rem;
         @include bg-gradient-second-prim;
-        -webkit-background-clip: text;
-        background-clip: text;
+        background-clip: inherit;
         -webkit-text-fill-color: transparent;
         transform-origin: bottom;
         transform: scale(0);

@@ -3,13 +3,11 @@
   font-family: 'Shrikhand';
   src: url(../fonts/Shrikhand-Regular.ttf);
   font-weight: 125 950;
-  font-stretch: 75% 125%;
 }
 
 @font-face {
   font-family: 'Roboto';
   src: url(../fonts/Roboto-Regular.ttf);
-  font-stretch: 75% 125%;
 }
 
 html {
@@ -819,6 +817,8 @@ h2 span {
   width: 30px;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 
 .heart__container:hover .heart--full {
@@ -829,8 +829,8 @@ h2 span {
 .heart__container:hover .heart--empty {
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(#FF79DA, #9356DC);
-  -webkit-background-clip: text;
-  background-clip: text;
+  background-clip: inherit;
+  -webkit-background-clip: inherit;
   -webkit-text-fill-color: transparent;
 }
 
@@ -851,8 +851,8 @@ h2 span {
   transition: all 200ms linear;
   z-index: 10;
   background: black;
-  -webkit-background-clip: text;
-  background-clip: text;
+  background-clip: inherit;
+  -webkit-background-clip: inherit;
   -webkit-text-fill-color: transparent;
 }
 
@@ -862,8 +862,7 @@ h2 span {
   font-size: 1.5rem;
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(#FF79DA, #9356DC);
-  -webkit-background-clip: text;
-  background-clip: text;
+  background-clip: inherit;
   -webkit-text-fill-color: transparent;
   -webkit-transform-origin: bottom;
           transform-origin: bottom;
