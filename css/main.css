@@ -817,7 +817,6 @@ h2 span {
   width: 30px;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  background-clip: text;
   -webkit-background-clip: text;
 }
 
