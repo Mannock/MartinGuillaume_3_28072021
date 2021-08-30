@@ -34,10 +34,6 @@ body {
   color: black;
 }
 
-h1 {
-  margin: 0.3em;
-}
-
 h2 {
   font-weight: 900;
   padding-left: 0.8em;
@@ -581,7 +577,6 @@ h2 span {
 .entrees a, .plats a, .desserts a {
   background-color: white;
   margin-bottom: 15px;
-  height: 80px;
 }
 
 .entrees p, .plats p, .desserts p {
@@ -632,11 +627,11 @@ h2 span {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   font-weight: bold;
-  padding: 10px;
+  padding: 10px 15px 15px 10px;
 }
 
 .price span {
